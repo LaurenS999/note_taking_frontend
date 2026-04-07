@@ -15,7 +15,14 @@ const Navbar = () => {
             Notes
           </NavLink>
         </li>
-        
+        <li>
+          <NavLink 
+            to="/categories" 
+            className='nav-link'
+          >
+            Categories
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

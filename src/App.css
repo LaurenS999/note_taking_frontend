@@ -9,3 +9,23 @@ h1{
   padding-top: 10px;
   padding-left: 10px;
 }
+
+.category_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  padding: 20px;
+}
+
+.noteCategory_dropdownlist{
+  padding-bottom: 20px;
+}
+
+.textArea_Content{
+  width: 100%;       /* Selalu selebar modal */
+  min-height: 150px;
+  max-height: 400px; /* Batas maksimal agar tidak keluar layar */
+  resize: vertical;  /* Hanya izinkan tarik ke bawah */
+  padding: 10px;
+  box-sizing: border-box;
+}

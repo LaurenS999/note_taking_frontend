@@ -1,0 +1,22 @@
+.item-card {
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.item-card:hover{
+  transform: translateY(-3px); /* Kartu sedikit naik */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Bayangan sedikit menebal */
+}
+
+.Card{
+  border: 1px solid black;     /* border hitam */
+  border-radius: 4px;          /* sudut melengkung */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* bayangan */
+  padding: 16px;               /* biar isi tidak nempel */
+  margin: 20px;
+  background-color: #e6ebee;     /* biar shadow terlihat */
+}

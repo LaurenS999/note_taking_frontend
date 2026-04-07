@@ -1,0 +1,22 @@
+.ColorPickerContainer {
+    display: flex;
+    align-items: center;    /* Membuat label dan kotak sejajar secara vertikal */
+    gap: 15px;              /* Memberikan jarak antara label dan kotak */
+    padding: 10px 0;
+}
+
+.colorLabel {
+    white-space: nowrap;    /* KUNCI: Mencegah teks turun ke baris baru */
+    font-weight: 500;
+    width: auto;
+}
+
+.ColorPicker {
+    cursor: pointer; 
+    width: 50px;            /* Ukuran sesuai permintaan */
+    height: 50px;
+    border: none;
+    padding: 0;
+    margin-right: 90px;             /* Menghapus padding bawaan browser */
+    
+}

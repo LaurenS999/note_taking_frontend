@@ -1,0 +1,26 @@
+.btn-save, .btn-edit{
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #007BFF;
+    padding: 5px;
+    color: white;
+}
+
+.btn-close{
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #6c757d;
+    padding: 5px;
+    color: white;
+}
+
+.btn-delete{
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #dc3545;
+    padding: 5px;
+    color: white;
+}

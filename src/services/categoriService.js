@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const API_URL = "http://localhost:5000/categories";
+// const API_URL = "http://localhost:5000/categories";
+//Menggunakan Env yang disediakan di Railway
+const API_URL = process.env.REACT_APP_API_URL;
 
 export const getCategories = (search) => {
     // Gunakan ${} bukan $()

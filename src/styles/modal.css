@@ -1,0 +1,49 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 30px;
+  border-radius: 6px;
+  width: 300px;
+}
+
+.modal-title{
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.modal input,
+.modal textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Header: judul kiri, tanggal kanan */
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Header: judul kiri, tanggal kanan */
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -110,9 +110,8 @@ export const useCategories = () => {
         try {
             if(!validateId(id)) return;
     
-            await deleteCategories(categoryToDelete);
-    
-            toast.success("Note berhasil Dihapus 👍");
+            const res = await deleteCategories(categoryToDelete);
+            toast.success("Kategori berhasil Dihapus 👍");
     
             setShowConfirmModal(false);
             setCategoryToDelete(null);
@@ -120,7 +119,26 @@ export const useCategories = () => {
             fetchCategories();
             
         } catch (error) {
-            console.error(error);
+            // SEMUA error (400, 404, 500) ditangkap di sini oleh Axios
+            if (error.response) {
+            const { status, data } = error.response;
+                if (status === 400) {
+                    // Ini adalah pesan "Kategori masih memiliki catatan" dari backend
+                    toast.info(data.message); 
+                    
+                } else if (status === 404) {
+                    toast.error("Kategori tidak ditemukan.");
+                } 
+                else 
+                {
+                    toast.error("Terjadi kesalahan sistem (Error 500).");
+                }
+            } 
+            else 
+            {
+                toast.error("Tidak bisa terhubung ke server.");
+            }
+            console.error("Detail Error:", error);
         }
       }
 

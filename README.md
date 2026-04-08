@@ -13,7 +13,9 @@ Aplikasi ini membutuhkan database. Kamu bisa menemukan repository database-nya d
 ## Change Deploy To Localhost
 
 Change in .env
+
 for Local use : REACT_APP_API_URL=http://localhost:5000
+
 for Deploy use : REACT_APP_API_URL=https://notetakingbackend-production.up.railway.app
 
 ## Fitur-Fitur Aplikasi

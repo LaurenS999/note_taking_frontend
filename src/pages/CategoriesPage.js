@@ -37,55 +37,57 @@ const CategoriesPage = () =>
     } = useCategories();
   
   return (  
-     <div className="Body">
-      <SearchBar
-        search={search}
-        setSearch={setSearch}
-        button={"Tambah Kategori"}
-        onAddclick={() => setShowAddModal(true)}
-      />
+    <div className='fullBody'>
+       <div className="Body">
+          <SearchBar
+            search={search}
+            setSearch={setSearch}
+            button={"Tambah Kategori"}
+            onAddclick={() => setShowAddModal(true)}
+          />
 
-      <AddCategoriesmodal
-        show={showAddModal}
-        newNama={newName}
-        setNewNama={setNewName}
-        newColor={newColor}
-        setNewColor={setNewColor}
-        onSave={handleAddCategory}
-        onClose={() => setShowAddModal(false)}
-      />
-      <div className="category_grid">
-        {categories.map(category => (
-            <CategoryCard
-              id={category.id}
-              name={category.name}
-              code_color={category.code_color}
-              onOpenModal={() =>openDetailCategoryModal(category)}
-            />
-        ))}
-      </div>
-      
-      <DetailCategoriesmodal
-        show={showDetailModal}
-        editName={editName}
-        setEditName={setEditName}
-        editColor={editColor}
-        setEditColor={setEditColor}
-        onEditNote={handleEditCategory}
-        onDeleteNote={() => confirmDeleteCategory(showDetailModal.id)}
-        onClose={() =>setShowDetailModal(null)}
+          <AddCategoriesmodal
+            show={showAddModal}
+            newNama={newName}
+            setNewNama={setNewName}
+            newColor={newColor}
+            setNewColor={setNewColor}
+            onSave={handleAddCategory}
+            onClose={() => setShowAddModal(false)}
+          />
+          <div className="category_grid">
+            {categories.map(category => (
+                <CategoryCard
+                  id={category.id}
+                  name={category.name}
+                  code_color={category.code_color}
+                  onOpenModal={() =>openDetailCategoryModal(category)}
+                />
+            ))}
+          </div>
+          
+          <DetailCategoriesmodal
+            show={showDetailModal}
+            editName={editName}
+            setEditName={setEditName}
+            editColor={editColor}
+            setEditColor={setEditColor}
+            onEditNote={handleEditCategory}
+            onDeleteNote={() => confirmDeleteCategory(showDetailModal.id)}
+            onClose={() =>setShowDetailModal(null)}
 
-      />
+          />
 
-      <ConfirmDeleteModal
-        show={showConfirmModal}
-        tabel={"Catatan"}
-        OnConfirm={handleDeleteCategory}
-        OnCancel={() => setShowConfirmModal(false)}
-      />
+          <ConfirmDeleteModal
+            show={showConfirmModal}
+            tabel={"Catatan"}
+            OnConfirm={handleDeleteCategory}
+            OnCancel={() => setShowConfirmModal(false)}
+          />
 
 
-       <ToastContainer/>
+          <ToastContainer/>
+        </div>
     </div>
   );
 }

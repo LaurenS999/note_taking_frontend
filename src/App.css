@@ -2,6 +2,7 @@
   background-color: #D8F3DC;
   padding-bottom: 10px;
   color: #202124;
+  height: 100%;
 }
 
 h1{
@@ -28,4 +29,10 @@ h1{
   resize: vertical;  /* Hanya izinkan tarik ke bawah */
   padding: 10px;
   box-sizing: border-box;
+}
+
+.fullBody{
+  background-color: #D8F3DC;
+  min-height: 100vh;
+  width: 100vw;
 }

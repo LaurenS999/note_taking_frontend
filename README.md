@@ -57,11 +57,11 @@ didalam aplikasi ini terdapat beberapa fitur yang dapat digunakan :
 
 - ScreenShoot Tampilan List note pencarian berdasarkan title
   
-  <img src="./public/screenshoot/searchbyTitle.PNG" alt="Screenshot Aplikasi Search by title" width="500">
+  <img src="./public/screenshoot/SearchbyTitle.PNG" alt="Screenshot Aplikasi Search by title" width="500">
 
 - ScreenShoot Tampilan List note pencarian berdasarkan content
   
-  <img src="./public/screenshoot/searchbyContent.PNG" alt="Screenshot Aplikasi Search by content" width="500">
+  <img src="./public/screenshoot/SearchbyContent.PNG" alt="Screenshot Aplikasi Search by content" width="500">
 
 ### Halaman list Kategori
 

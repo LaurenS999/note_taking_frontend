@@ -8,6 +8,8 @@ Aplikasi ini dibangun dengan arsitektur modern yang memisahkan antara Frontend d
 
 Aplikasi ini membutuhkan API server untuk berjalan. Kamu bisa menemukan repository backend-nya di sini: [LaurenS999/Note_Taking_backend](https://github.com/LaurenS999/note_taking_backend)."
 
+Aplikasi ini membutuhkan database. Kamu bisa menemukan repository database-nya di sini : [LaurenS999/Note_Taking_database](https://github.com/LaurenS999/note_taking_database)."
+
 ## Change Deploy To Localhost
 
 Change in .env

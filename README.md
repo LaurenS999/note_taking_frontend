@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Note Taking
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Note Taking adalah aplikasi manajemen catatan harian (daily notes) berbasis web yang dirancang untuk kemudahan akses di mana saja. Dengan antarmuka yang responsif, pengguna dapat mencatat ide, tugas, atau agenda penting secara praktis melalui perangkat apa pun.
+Aplikasi ini dibangun dengan arsitektur modern yang memisahkan antara Frontend dan Backend untuk efisiensi performa:
 
-## Available Scripts
+- Frontend: Dibangun dengan React dan dideploy melalui Netlify.
+- Backend: Mengelola data dan API, berjalan di platform Railway.
 
-In the project directory, you can run:
+Aplikasi ini membutuhkan API server untuk berjalan. Kamu bisa menemukan repository backend-nya di sini: [LaurenS999/Note_Taking_backend](https://github.com/LaurenS999/note_taking_backend)."
 
-### `npm start`
+## Change Deploy To Localhost
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Change in .env
+for Local use : REACT_APP_API_URL=http://localhost:5000
+for Deploy use : REACT_APP_API_URL=https://notetakingbackend-production.up.railway.app
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Fitur-Fitur Aplikasi
 
-### `npm test`
+didalam aplikasi ini terdapat beberapa fitur yang dapat digunakan :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Main Page
 
-### `npm run build`
+- ScreenShoot Tampilan Main Page
+  <img src="./public/screenshoot/MainPage.png" alt="Screenshot aplikasi" width="500">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ScreenShoot Tampilan List Note berdasarkan tanggal terbaru
+  <img src="./public/screenshoot/ListNoteByDateDesc.png" alt="Screenshot aplikasi List Note by Date Desc" width="500">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Membuat catatan
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- ScreenShoot Tampilan modal create note
+  <img src="./public/screenshoot/CreateNote.png" alt="Screenshot aplikasi tambah note" width="500">
+- ScreenShoot Tampilan berhasil membuat note
+  <img src="./public/screenshoot/SuccessCreateNote.png" alt="Screenshot aplikasi success tambah note" width="500">
 
-### `npm run eject`
+### Mengedit catatan
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- ScreenShoot Tampilan modal detil note dimana dapat melakukan pengeditan dan penghapus note
+  <img src="./public/screenshoot/DetailNote.png" alt="Screenshot aplikasi detail note" width="500">
+- ScreenShoot Tampilan berhasil mengedit data note
+  <img src="./public/screenshoot/SuccessEditNote.png" alt="Screenshot aplikasi Success edit note" width="500">
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Menghapus catatan
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- ScreenShoot Tampilan berhasil menghapus data note
+  <img src="./public/screenshoot/SuccessDeleteNote.png" alt="Screenshot aplikasi success delete note" width="500">
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Pencarian catatan berdasarkan keyword
 
-## Learn More
+- ScreenShoot Tampilan List note pencarian berdasarkan title
+  <img src="./public/screenshoot/searchbyTitle.png" alt="Screenshot Aplikasi Search by title" width="500">
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- ScreenShoot Tampilan List note pencarian berdasarkan content
+  <img src="./public/screenshoot/searchbyContent.png" alt="Screenshot Aplikasi Search by content" width="500">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Halaman list Kategori
 
-### Code Splitting
+- ScreenShoot Tampilan List category
+  <img src="./public/screenshoot/ListCategory.png" alt="Screenshot aplikasi List Note by Date Desc" width="500">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Membuat Kategori
 
-### Analyzing the Bundle Size
+- ScreenShoot Tampilan modal create category
+  <img src="./public/screenshoot/CreateCategory.png" alt="Screenshot aplikasi tambah kategori" width="500">
+- ScreenShoot Tampilan Success membuat category
+  <img src="./public/screenshoot/SuccessCreateCategory.png" alt="Screenshot aplikasi success tambah kategori" width="500">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Mengedit Kategori
 
-### Making a Progressive Web App
+- ScreenShoot Tampilan modal detail category dimana dapat melakukan pengubahan dan penghapusan category
+  <img src="./public/screenshoot/DetailCategory.png" alt="Screenshot aplikasi detail note" width="500">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- ScreenShoot Tampilan berhasil mengedit data category
+  <img src="./public/screenshoot/SuccessEditCategory.png" alt="Screenshot aplikasi edit kategori" width="500">
 
-### Advanced Configuration
+### Menghapus Kategori
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- ScreenShoot Tampilan berhasil menghapus data category
+  <img src="./public/screenshoot/SuccessDeleteCategory.png" alt="Screenshot aplikasi Success delete kategori" width="500">
+- ScreenShoot Tampilan Gagal Delete dikarenakan ada nya note yang terhubung dengan Category
+  <img src="./public/screenshoot/FailDeleteCategory.png" alt="Screenshot aplikasi Fail delete kategori" width="500">
 
-### Deployment
+### Validation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- ScreenShoot Tampilan Validation Note mencegah Title dan content Kosong
+  <img src="./public/screenshoot/ValidationNote.png" alt="Screenshot Aplikasi Validation Note" width="500">
+- ScreenShoot Tampilan Validation Category mencegah Name dan Code_color Kosong
+  <img src="./public/screenshoot/ValidationCategory.png" alt="Screenshot Aplikasi Validation Category" width="500">
 
-### `npm run build` fails to minify
+### Pagination
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- ScreenShoot Tampilan Pagination di halaman utama
+  Fitur ini membagi list note menjadi beberapa halaman dimana setiap halaman hanya menampung 7 note.
+  <img src="./public/screenshoot/Pagination.png" alt="Screenshot Aplikasi Pagination List Note" width="500">
